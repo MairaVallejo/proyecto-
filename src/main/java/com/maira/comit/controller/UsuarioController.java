@@ -11,14 +11,5 @@ import com.maira.comit.repositorios.UsuarioRepository;
 @RestController
 @RequestMapping("api/Usuario")
 public class UsuarioController {
-/*@Autowired
-	private UsuarioRepository usuarioRepo;
-	@GetMapping(value ="/")
-	public ResponseEntity<Usuario> nuevoUsuario(){
-		
-		
-		Usuario usuario = new Usuario();
-		usuarioRepo.save(usuario);
-		return ResponseEntity.ok(usuario);
-	}*/
+
 }

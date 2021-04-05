@@ -24,7 +24,7 @@ import com.maira.comit.repositorios.AdministradorRepository;
 public class AdministradorController {
 	
 	@Autowired
-    AdministradorRepository repo; // asi instancio un repositorio 
+    AdministradorRepository repo; // 
 
 	/*@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Administrador>> getAdministrador(){

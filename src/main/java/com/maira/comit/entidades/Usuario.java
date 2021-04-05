@@ -25,8 +25,7 @@ public class Usuario implements Serializable {
 	private String username;
 	private String password;
 	private String email;
-	//@OneToMany
-	//private List <Administrador> admi;
+	
 	
 	public Usuario() {
 		// TODO Auto-generated constructor stub

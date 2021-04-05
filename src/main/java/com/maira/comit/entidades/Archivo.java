@@ -13,7 +13,7 @@ public class Archivo extends Publicacion implements Serializable {
 	@Id
 	private Long id; 
 	private String descripcion; 
-	//@Type( type = "Text") //me permite escribir mas cosas 
+	//@Type( type = "Text") 
 	
 	
 	
