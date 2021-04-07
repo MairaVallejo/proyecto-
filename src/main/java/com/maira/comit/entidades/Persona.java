@@ -8,16 +8,14 @@ import javax.persistence.Id;
 
 @Entity
 public class Persona extends Usuario implements Serializable  {
-	
-	
 	private static final long serialVersionUID = 1L;
 	@Id
 	private Long id; 
-	private Integer edad;
 	private String ubicacion;
 	
-	public Persona() {
-		
+	
+	public Persona(String ubicacion) { 
+		this.ubicacion = ubicacion; 
 	}
 
 	public String getUbicacion() {
@@ -26,14 +24,6 @@ public class Persona extends Usuario implements Serializable  {
 
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
-	}
-
-	public Integer getEdad() {
-		return edad;
-	}
-
-	public void setEdad(Integer edad) {
-		this.edad = edad;
 	}
 	
 	

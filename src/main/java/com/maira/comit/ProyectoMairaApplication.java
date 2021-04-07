@@ -19,8 +19,8 @@ public class ProyectoMairaApplication {
 	@Bean 
 	public CommandLineRunner loadData(AdministradorRepository repository) {
 	return (args) -> {
-		String[] nombreLocal = {"locaropa","localcomida","localcosas"};
-		String[] nombreEmpresa = {"ropatrucha","comidaenmalestado","cosasA.S."};		
+		String[] nombreLocal = {"locaR","localC","localC"};
+		String[] nombreEmpresa = {"nombre1","nombre2","nombre3"};		
 		Administrador administrador = new Administrador();
 		Administrador.setnombreLocal("minoombrelocal");
 		Administrador.setnombreEmpresa("Esta empresa");

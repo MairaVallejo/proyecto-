@@ -29,7 +29,7 @@ public class AdministradorController {
 	/*@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Administrador>> getAdministrador(){
 		return new ResponseEntity<List<Administrador>>(List<Administrador>) repo.findAll(), HttpStatus.OK);
-	}*/
+	}
 	
 	@PostMapping(value = "/")
 	public ResponseEntity<Wrapper> saveAdministrador(@PathParam(value = "noombreLocal") String nombreLocal){
@@ -43,7 +43,7 @@ public class AdministradorController {
 		
 		repo.save(administrador);
 		wrapper.object = administrador;
-		wrapper.status = "El cliente fue agregado";
+		wrapper.status = "El Usuario fue agregado";
 		return new ResponseEntity<Wrapper>(wrapper, HttpStatus.CREATED);
 	}
 	
@@ -54,9 +54,9 @@ public class AdministradorController {
 		try {
 			Administrador administrador = repo.findById(id).get();
 			repo.delete(administrador);
-			wrapper.status ="El cliente "+ id + "fue eliminado";
+			wrapper.status ="El Usuario "+ id + "fue eliminado";
 		}	catch (Exception e) {
-			wrapper.status = "El cliente no fue encontrado";
+			wrapper.status = "El Usuario no fue encontrado";
 		}
 		return new ResponseEntity<Wrapper>(wrapper, HttpStatus.OK);
 		
@@ -64,6 +64,6 @@ public class AdministradorController {
 	public class Wrapper{
 		public String status;
 		public Object object;
-	}
+	}*/
 		
 }

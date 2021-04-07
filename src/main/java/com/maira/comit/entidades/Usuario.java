@@ -31,7 +31,7 @@ public class Usuario implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 	
-	/*public Usuario(String username, String password, String email) {
+	public Usuario(String username, String password, String email) {
 		this.username = username;
 		this.password = password;
 		this.email = email;
@@ -61,6 +61,5 @@ public class Usuario implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	*/
 	
 }
