@@ -1,15 +1,13 @@
 package com.maira.comit.entidades;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+
 @Entity
 public class Publicacion extends Usuario implements Serializable {
 
@@ -21,9 +19,10 @@ public class Publicacion extends Usuario implements Serializable {
 	private String fecha;
 	private String texto;
 	private String descripcion;
-	/*@OneToMany
-	private List<Archivo> archivos = new ArrayList<>();
+	/*
+	 * @OneToMany private List<Archivo> archivos = new ArrayList<>();
+	 */
 	@ManyToOne
-	private List<Categoria> categorias = new ArrayList<>();*/
-	
+	private Categoria categoria;
+
 }
