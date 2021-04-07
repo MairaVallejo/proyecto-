@@ -64,12 +64,12 @@ public class MainController {
 
 	@RequestMapping(value = "/save", method = { RequestMethod.POST, RequestMethod.PUT })
 	public String save(@RequestParam(value = "nombre") String nombre, @RequestParam(value = "apellido") String apellido,
-			@RequestParam(value = "fechaNacimiento") String fechaNacimiento, @RequestParam(value = "ubicacion") String ubicacion,
+			@RequestParam(value = "fechaNacimiento") String fechaNacimiento,
 			Model model) throws ParseException {
 
 		Date fecha = new SimpleDateFormat("yyyy-mm-dd").parse(fechaNacimiento);
 
-		PersonaDto persona = new PersonaDto(apellido, nombre, fecha,ubicacion);
+		PersonaDto persona = new PersonaDto(apellido, nombre, fecha);
 		persona.setId(singletonDatabase.count());
 		singletonDatabase.save(persona);
 		model.addAttribute("persona", persona);
@@ -80,7 +80,6 @@ public class MainController {
 	public String edit(@PathVariable(value = "id") Integer id, @RequestParam(value = "nombre") String nombre,
 			@RequestParam(value = "apellido") String apellido,
 			@RequestParam(value = "fechaNacimiento") String fechaNacimiento,
-			@RequestParam(value = "ubicacion") String ubicacion,
 			@RequestParam(value = "activo", required = false) Boolean activo, Model model) throws ParseException {
 
 		Date fecha = new SimpleDateFormat("yyyy-mm-dd").parse(fechaNacimiento);
@@ -89,7 +88,6 @@ public class MainController {
 		persona.setApellido(apellido);
 		persona.setNombre(nombre);
 		persona.setFechaNacimiento(fecha);
-		persona.setFechaNacimiento(ubicacion);
 //		persona.setActivo(activo != null);
 		persona.setActivo(activo == null ? false : true);
 
@@ -118,4 +116,6 @@ public class MainController {
 	public String error() {
 		return "error";
 	}
+	
+	
 }

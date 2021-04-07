@@ -20,7 +20,7 @@ public class CategoriaController {
 	    
 	    lista.add(new Categoria (1l, "Bibliotecas"));
 	  
-	    lista.add(new Categoria (2l,"Gastronomia"));
+	    lista.add(new Categoria (2l,"Restaurantes"));
 	    
 	    lista.add(new Categoria (3l,"Farmacias"));
 	    

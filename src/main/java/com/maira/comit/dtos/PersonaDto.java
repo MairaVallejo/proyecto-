@@ -13,18 +13,17 @@ public class PersonaDto implements Serializable {
 	private String nombre;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date fechaNacimiento;
-	private String ubicacion;
 	private Boolean activo = true;
 
 	public PersonaDto() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PersonaDto(String apellido, String nombre, Date fechaNacimiento,String ubicacion) {
+	public PersonaDto(String apellido, String nombre, Date fechaNacimiento) {
 		this.apellido = apellido;
 		this.nombre = nombre;
 		this.fechaNacimiento = fechaNacimiento;
-		this.ubicacion = ubicacion;
+		
 	}
 
 	public String getApellido() {
@@ -68,12 +67,5 @@ public class PersonaDto implements Serializable {
 		this.id = id;
 	}
 
-	public String getUbicacion() {
-		return ubicacion;
-	}
-
-	public void setUbicacion(String ubicacion) {
-		this.ubicacion = ubicacion;
-	}
 
 }
