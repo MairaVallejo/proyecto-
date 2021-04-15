@@ -14,8 +14,8 @@ import com.maira.comit.entidades.Publicacion;
 @Transactional
 public interface PublicacionRepository extends CrudRepository<Publicacion, Long> {
 
-	List<Publicacion> findAllByCategoria_Categoria(String categoria);
+//	List<Publicacion> findAllByCategoria_Categoria(String categoria);
 
-	@Query(value = "from Publicacion p join p.categoria c where c.categoria=:categoria")
-	List<Publicacion> buscarPorCategoria(String categoria);
+//	@Query(value = "from Publicacion p join p.categoria c where c.categoria=:categoria")
+//	List<Publicacion> buscarPorCategoria(String categoria);
 }

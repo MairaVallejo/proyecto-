@@ -22,7 +22,7 @@ public class Publicacion extends Usuario implements Serializable {
 	/*
 	 * @OneToMany private List<Archivo> archivos = new ArrayList<>();
 	 */
-	@ManyToOne
-	private Categoria categoria;
+	//@ManyToOne
+	//private Categoria categoria;
 
 }

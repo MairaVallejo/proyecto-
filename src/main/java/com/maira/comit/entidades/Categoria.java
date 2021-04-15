@@ -1,7 +1,6 @@
 package com.maira.comit.entidades;
 
 import java.io.Serializable;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -49,4 +48,4 @@ public class Categoria implements Serializable {
 	
 	
 }
-// que elija la categoria 
+

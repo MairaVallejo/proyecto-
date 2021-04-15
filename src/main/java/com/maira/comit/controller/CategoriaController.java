@@ -13,11 +13,11 @@ public class CategoriaController {
 
 	@Autowired
 	CategoriaRepository categoriaRepository;
-
+	//devuelve un listado de categorias
 	@RequestMapping("/categoria")
 	public String listar(Model model) {
 		model.addAttribute("categorias", categoriaRepository.findAll());
 		return "categorias";
 	}
-
+	
 }

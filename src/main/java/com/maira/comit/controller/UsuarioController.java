@@ -1,14 +1,9 @@
 package com.maira.comit.controller;
 
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import com.maira.comit.entidades.Usuario;
-import com.maira.comit.repositorios.UsuarioRepository;
-@RestController
+@Controller
 @RequestMapping("api/Usuario")
 public class UsuarioController {
 
